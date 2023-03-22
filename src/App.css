@@ -1,0 +1,289 @@
+.tab{
+  text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.Blog{
+  text-decoration: none;
+  color: black;
+  background-color: rgb(238, 238, 238);
+}
+
+
+@media (min-width:961px) {
+  body{
+    font-size: 17px;
+  }
+  header{
+    text-align: center;
+  }
+  .headerTab{
+    position: fixed;
+    background-color: gray;
+    color: white;
+    transition: .25s ease-in-out;
+    z-index: 1;
+    border-radius: 0 25px 25px 0;
+    height: 80%;
+    width: 100px;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    left: -5.5%;
+    top: 10%;
+  }
+  .headerTab:hover{
+    left: 0%;
+  }
+  .tab{
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .tab:hover{
+    background-color: rgba(0, 0, 0, 0.189);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.189);
+  }
+  .tab > p{
+    margin: 0;
+  }
+  article{
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    padding: 5%;
+    padding-top: 0%;
+    animation: fadeIn .5s;
+    padding-bottom: 120px;
+  }
+  .profileImg{
+    width: 50%;
+  }
+  .Blog{
+    text-decoration: none;
+    color: black;
+    padding: 20px 0 20px 0;
+    border-radius: 25px;
+    box-shadow: 4px 4px 20px black;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: .5%;
+    margin-bottom: 50px;
+    justify-content: center;
+    transition: .25s ease-in-out;
+    filter: brightness(90%);
+  }
+  .Blog:hover{
+    filter: brightness(100%);
+  }
+  
+  .blogInfo>h3{
+    margin: 0;
+  }
+  
+  .blogImage{
+    height: 200px;
+    aspect-ratio: 3/2;
+  }
+  .blogInfo{
+    text-align: left;
+  }
+  .blogPageDesc{
+    text-align: left;
+  }
+  .blogPageImage{
+    width: 80%;
+    aspect-ratio: 3/2;
+  }
+  form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 20px;
+    font-weight: bold;
+  }
+  .formElement{
+    width: 50%;
+  }
+  .formElement > input, .formElement > textarea{
+    width: 90%;
+  }
+  input{
+    height: 25px;
+    width: 150px;
+  }
+  button{
+    background-color: gray;
+    color: white;
+    border: black 2px solid;
+    border-radius: 25px;
+    height: 50px;
+    width: 60%;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    font-size: 17px;
+  }
+  header{
+    text-align: center;
+  }
+  .headerTab{
+    background-color: gray;
+    width: 90%;
+    display: grid;
+    grid-auto-flow: column;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 25px 25px 0 0;
+    color: white;
+  }
+  .tab{
+    height: 100px;
+    text-align: center;
+  }
+  .tab > p{
+    margin: 0%;
+  }
+  article{
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    padding: 5%;
+    animation: fadeIn .5s;
+    padding-bottom: 120px;
+  }
+  .profileImg{
+    width: 90%;
+  }
+  .Blog{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 30px;
+  }
+  .blogImage, .blogPageImage{
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  .blogInfo > h3{
+    margin: 0;
+  }
+  .blogInfo > p{
+    display: none;
+  }
+
+  .blogPageDesc{
+    text-align: left;
+  }
+  form{
+    text-align: center;
+  }
+  .formElement > input{
+    height: 25px;
+    padding-bottom: 4px;
+  }
+  .formElement > input, .formElement > textarea{
+    width: 100%;
+  }
+  button{
+    border: 2px black solid;
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+  body{
+    font-size: 25px;
+  }
+  header{
+    text-align: center;
+  }
+  .headerTab{
+    background-color: gray;
+    width: 90%;
+    height: 110px;
+    display: grid;
+    grid-auto-flow: column;
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 25px 25px 0 0;
+  }
+  .tab{
+    height: 100px;
+    text-align: center;
+  }
+  .tab > p{
+    margin: 0%;
+  }
+  article{
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    padding: 5%;
+    animation: fadeIn .5s;
+    padding-bottom: 120px;
+  }
+  .profileImg{
+    width: 90%;
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 47.5%);
+    column-gap: 5%;
+    row-gap: 50px;
+  }
+  .Blog{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+  }
+  .blogImage, .blogPageImage{
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  .blogInfo > h3{
+    margin: 0;
+  }
+  .blogInfo > p{
+    display: none;
+  }
+
+  .blogPageDesc{
+    text-align: left;
+  }
+  form{
+    text-align: center;
+  }
+  .formElement > input{
+    height: 25px;
+    padding-bottom: 4px;
+  }
+  .formElement > input, .formElement > textarea{
+    width: 100%;
+  }
+  button{
+    border: 2px black solid;
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+  }
+}
