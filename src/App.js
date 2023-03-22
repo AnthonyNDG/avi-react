@@ -118,7 +118,7 @@ export function Blog(){
   
     var array;
 
-    var blogCredentials = window.location.href.split('/')[4].replaceAll('%20','').split('-');
+    var blogCredentials = window.location.href.split('/')[5].replaceAll('%20','').split('-');
     console.log(blogCredentials[0]);
     
     data.values.map((blog)=>{
